@@ -93,9 +93,6 @@ document.getElementById('mediaCardForm').addEventListener('submit', function(eve
                     const nameLines = breakTextIntoLines(name, 26);
                     const companyLines = breakTextIntoLines(company, 37);
 
-// Elspeth Robertson-DuBois DuBois
-// American Society of Agricultural and Biological Engineers
-
                     const lineHeight = 45;
                     const companyLineHeight = 40;
 
@@ -123,7 +120,7 @@ document.getElementById('mediaCardForm').addEventListener('submit', function(eve
                     const downloadLink = document.getElementById('downloadLink');
                     // Set the image format to JPEG and quality to 0.8 (80%)
                     downloadLink.href = canvas.toDataURL('image/jpeg', 0.8);
-                    downloadLink.download = 'media_card.jpg';
+                    downloadLink.download = `${name}-media_card.jpg`;
                     downloadLink.style.display = 'block';
                     downloadLink.textContent = 'Download Media Card';
 
