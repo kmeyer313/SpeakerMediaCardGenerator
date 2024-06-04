@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I'm Speaking! | Solar Farm Summit</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>I'M SPEAKING AT THE<br>2024 SOLAR FARM SUMMIT!<br><span class="sub-head">Media Card Generator</span></h1>
+        <form id="mediaCardForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="company">Company:</label>
+            <input type="text" id="company" name="company" required>
+
+            <label for="headshot">Headshot:</label>
+            <small>Please upload a LinkedIn profile image, or a square image file of similar dimensions.</small>
+            <input type="file" id="headshot" name="headshot" accept="image/*" required>
+
+            <label>Select Background:</label>
+            <div class="background-options">
+                <label>
+                    <input type="radio" name="background" value="background1" checked> 
+                    <img src="SFS24ImSpeakingCardA.jpg" alt="Background 1 Preview" class="background-preview">
+                </label>
+                <label>
+                    <input type="radio" name="background" value="background2"> 
+                    <img src="SFS24ImSpeakingCardB.jpg" alt="Background 2 Preview" class="background-preview">
+                </label>
+            </div>
+
+
+            <button type="submit">Generate Media Card</button>
+        </form>
+
+        <canvas id="mediaCardCanvas" width="1200" height="670" style="width: 600px; height: 335px;"></canvas>
+        <!-- <canvas id="mediaCardCanvas" width="800" height="447" style="display:none;"></canvas> -->
+        <!-- <canvas id="mediaCardCanvas" width="600" height="335" style="display:none;"></canvas> -->
+        
+        <a id="downloadLink" style="display:none;">Download Media Card</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

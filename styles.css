@@ -1,0 +1,112 @@
+body {
+    font-family: "Arial Black", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #243610;
+    margin: 0;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 360px;
+    text-align: center;
+}
+
+h1 {
+    color: #243610;
+    font-size: 25px;
+}
+
+
+.sub-head {
+    color: #000;
+    font-size: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-family: Arial;
+    margin: 10px 0 5px;
+    text-align: left;
+}
+
+small {
+    text-align: left;
+    font-family: Arial;
+    font-style: italic;
+}
+
+input {
+    font-family: Arial;
+    font-size: 16px;
+    margin-bottom: 15px;
+    padding: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #243610;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #000000;
+}
+
+#mediaCardCanvas {
+    display: none;
+    pointer-events: none; /* Allow clicks to pass through the canvas */
+    position: absolute; /* Position the canvas */
+    top: calc(100% + 10px); /* Position below the form with additional space */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for centering horizontally */
+    z-index: -1; /* Place canvas behind other content */
+    margin: 0 auto; /* Center horizontally */
+    padding: 0; /* Remove default padding if any */
+}
+
+/* Adjust the form's position to accommodate the canvas */
+#mediaCardForm {
+    position: relative;
+}
+
+.background-options {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+.background-options label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.background-preview {
+    width: 135px;
+    height: 75px;
+    object-fit: cover;
+    border: 2px solid transparent;
+}
+
+input[type="radio"]:checked + .background-preview {
+    border-color: #007BFF;
+}
+
+#downloadLink {
+    margin-top: 20px;
+}
