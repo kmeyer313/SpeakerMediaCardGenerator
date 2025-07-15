@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>I'm Speaking! | Solar Farm Summit</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="sfs-logo.png">
 </head>
 <body>
     <div class="container">
-        <h1>I'M SPEAKING AT THE<br>2024 SOLAR FARM SUMMIT!<br><span class="sub-head">Media Card Generator</span></h1>
+        <h1>I'M SPEAKING AT THE<br>2025 SOLAR FARM SUMMIT!<br><span class="sub-head">Media Card Generator</span></h1>
         <form id="mediaCardForm">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
@@ -17,23 +18,34 @@
             <input type="text" id="company" name="company" required>
 
             <label for="headshot">Headshot:</label>
-            <small>Please upload a LinkedIn profile image, or a square image file of similar dimensions.</small>
+            <small>Please upload your LinkedIn profile image, or a square image file so that the image does not stretch.</small>
             <input type="file" id="headshot" name="headshot" accept="image/*" required>
 
             <label>Select Background:</label>
             <div class="background-options">
                 <label>
                     <input type="radio" name="background" value="background1" checked> 
-                    <img src="SFS24ImSpeakingCardA.jpg" alt="Background 1 Preview" class="background-preview">
+                    <img src="SFS25ImSpeakingCardA.jpg" alt="Background 1 Preview" class="background-preview">
                 </label>
                 <label>
                     <input type="radio" name="background" value="background2"> 
-                    <img src="SFS24ImSpeakingCardB.jpg" alt="Background 2 Preview" class="background-preview">
+                    <img src="SFS25ImSpeakingCardB.jpg" alt="Background 2 Preview" class="background-preview">
+                </label>
+                <label>
+                    <input type="radio" name="background" value="background3"> 
+                    <img src="SFS25ImSpeakingCardC.jpg" alt="Background 3 Preview" class="background-preview">
                 </label>
             </div>
 
 
             <button type="submit">Generate Media Card</button>
+            <div class="reminders">
+                <p class="help-text"><small>After you add your info above and click Generate Media Card, scroll down for a preview and download link. You can select a different background and click Generate Media Card again to see a preview with each background!</small></p>
+                <p>Don't forget to join the event on our <a href="https://www.linkedin.com/events/2025solarfarmsummit7340794025689419776/attendees/" target="_blank">LinkedIn event page</a> and start networking with other attendees!</p>
+                <p>Attending companies and organizations registered so far can be found on the <a href="https://solarfarmsummit.com/whos-attending-sfs25%3F" target="_blank">Who's Attending SFS25?</a> page.</p>
+                <p>Check out our <a href="https://solarfarmsummit.com/view-expo" target="_blank">Exhibitors</a>!</p>
+                <p>Thank you <a href="https://solarfarmsummit.com/sponsors" target="_blank">Sponsors</a>!</p>
+            </div>
         </form>
 
         <canvas id="mediaCardCanvas" width="1200" height="670" style="width: 600px; height: 335px;"></canvas>

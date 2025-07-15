@@ -3,7 +3,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 150vh;
     background-color: #243610;
     margin: 0;
 }
@@ -13,8 +13,12 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    width: 360px;
+    width: 355px;
     text-align: center;
+}
+
+img {
+    max-width: 200px;
 }
 
 h1 {
@@ -70,12 +74,13 @@ button:hover {
     display: none;
     pointer-events: none; /* Allow clicks to pass through the canvas */
     position: absolute; /* Position the canvas */
-    top: calc(100% + 10px); /* Position below the form with additional space */
+    top: calc(100% + 300px); /* Position below the form with additional space */
     left: 50%; /* Center horizontally */
     transform: translateX(-50%); /* Adjust for centering horizontally */
     z-index: -1; /* Place canvas behind other content */
     margin: 0 auto; /* Center horizontally */
     padding: 0; /* Remove default padding if any */
+    margin-bottom: 100px;
 }
 
 /* Adjust the form's position to accommodate the canvas */
@@ -84,13 +89,13 @@ button:hover {
 }
 
 .background-options {
-    display: flex;
+    display: block;
     justify-content: space-around;
     margin-bottom: 15px;
 }
 
 .background-options label {
-    display: flex;
+    display: inline-block;
     flex-direction: column;
     align-items: center;
     cursor: pointer;
@@ -109,4 +114,15 @@ input[type="radio"]:checked + .background-preview {
 
 #downloadLink {
     margin-top: 20px;
+}
+
+.reminders {
+    font-size: 14px;
+    font-family: Arial;
+
+    .help-text {
+        margin: auto;
+        margin-top: 10px;
+        /*max-width: 330px;*/
+    }
 }
